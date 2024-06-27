@@ -1,0 +1,68 @@
+.precio {
+  display: flex;
+  justify-content: center;
+  color: #07124b;
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 36px;
+}
+/* calendario */
+.date2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e8f0;
+  border: 1px solid #07124b;
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .fecha-hora {
+    display: flex;
+    justify-content: start;
+    align-items: self-start;
+    gap: 7px;
+    color: #262626;
+    font-size: 18px;
+  }
+  .fecha-hora > img {
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+  }
+}
+.calendario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+.calendario > p {
+  font-size: 24px;
+}
+.pago {
+  display: flex;
+  justify-content: center;
+  .boton-pago {
+    background: #07124b;
+    border-radius: 8px;
+    color: #fcfcfc;
+    width: 380px;
+    height: 48px;
+    border: none;
+  }
+
+  .boton-pago:hover {
+    background-color: #0a1d75;
+  }
+}
+@media (max-width: 768px) {
+  .calendario > p {
+    font-size: 20px;
+  }
+}

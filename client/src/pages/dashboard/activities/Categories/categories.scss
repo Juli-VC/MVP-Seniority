@@ -1,0 +1,226 @@
+$azul: #07124b;
+$blanco: #fcfcfc;
+$negro: #212121;
+
+.allActivities3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0;
+
+  .tituloActivities {
+    text-align: center;
+    .titulo {
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 120%;
+
+      text-align: center;
+      /* Primary/Dark */
+      color: $azul;
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
+  .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    .titleCategory {
+      color: $azul;
+      font-weight: 600;
+    }
+    .colCard {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        margin-bottom: 25px;
+        max-width: 280px;
+
+        /* Neutral/Light */
+        background: $blanco;
+        /* Cards */
+        box-shadow: 0px 25px 50px -12px rgba(7, 18, 75, 0.12);
+        border-radius: 8px;
+        .tagNuevo {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 16px;
+          gap: 8px;
+
+          position: absolute;
+          width: 71px;
+          height: 25px;
+          left: 8px;
+          top: 8.55px;
+
+          /* Tertiary/Normal */
+
+          background: #59ffc9;
+          border-radius: 2px;
+        }
+        .card-img {
+          position: absolute;
+          height: 157px;
+          left: 0px;
+          right: 0px;
+          top: 0px;
+        }
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 16px;
+          isolation: isolate;
+
+          max-width: 280px;
+          /* height: 202px; */
+
+          .cardBody_inside {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: 0px;
+            gap: 10px;
+
+            /* width: 248px;
+            height: 202px; */
+
+            .card-title {
+              font-family: "Atkinson Hyperlegible";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 120%;
+              color: $negro;
+            }
+            .black {
+              color: $negro;
+              font-weight: bold;
+            }
+            .card-text {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              gap: 20px;
+              p {
+                margin: 0;
+              }
+              .places {
+                font-family: "Atkinson Hyperlegible";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+                /* Neutral/Darker */
+                color: #4f4f4f;
+              }
+              .iconitos {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+                padding: 0px;
+                > div {
+                  color: #4f4f4f;
+                }
+              }
+
+              .hidden{
+                display: none;
+              }
+
+              .discount {
+                font-family: "Atkinson Hyperlegible";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+                color: #212121;
+
+                .tachado{
+                  text-decoration: line-through;
+                }
+              }
+            }
+          }
+        }
+        .card-footer {
+          width: 100%;
+          button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0px;
+            gap: 16px;
+            width: 100%;
+            height: 48px;
+            background-color: $azul;
+            border-radius: 8px;
+            font-family: "Atkinson Hyperlegible";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: $blanco;
+            img {
+              width: 24px;
+              height: 24px;
+
+              left: 1.11%;
+              right: 1.11%;
+              top: 99.4%;
+              bottom: -94.6%;
+
+              /* Neutral/Light */
+
+              color: #fcfcfc;
+            }
+          }
+          button:hover {
+            background-color: #0a1d75;
+          }
+        }
+      }
+    }
+  }
+}
+
+//movil
+@media (max-width: 360px) {
+  .colCard {
+    padding: 0;
+  }
+}
+@media (max-width: 769px) {
+  .colCard {
+    gap: 30px;
+    padding-left: 80px;
+  }
+}

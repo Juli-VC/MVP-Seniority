@@ -1,0 +1,275 @@
+$azul: #07124b;
+$blanco: #fcfcfc;
+$negro: #212121;
+
+* {
+  user-select: none;
+  font-family: "Atkinson Hyperlegible";
+
+  button {
+    border: none;
+  }
+}
+.hide {
+  display: none;
+}
+
+.allActivities2 {
+  .tituloActivities {
+    text-align: center;
+    .titulo {
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 120%;
+
+      text-align: center;
+      /* Primary/Dark */
+      color: $azul;
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
+  .categories {
+    margin: 0;
+    .colCard {
+      // width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 80px;
+      padding-bottom: 25px;
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        max-width: 280px;
+        height: 100%;
+        width: 100%;
+        /* Neutral/Light */
+        background: $blanco;
+        /* Cards */
+        box-shadow: 0px 25px 50px -12px rgba(7, 18, 75, 0.12);
+        border-radius: 8px;
+
+        .card-img {
+          position: absolute;
+          height: 157px;
+          left: 0px;
+          right: 0px;
+          top: 0px;
+        }
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 16px;
+          isolation: isolate;
+
+          max-width: 280px;
+          /* height: 202px; */
+
+          .cardBody_inside {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 10px;
+
+            /* width: 248px;
+            height: 202px; */
+
+            .card-title {
+              font-family: "Atkinson Hyperlegible";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 120%;
+              color: $negro;
+            }
+            .black {
+              color: $negro;
+              font-weight: bold;
+            }
+            .card-text {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              gap: 20px;
+              p {
+                margin: 0;
+              }
+              .places {
+                font-family: "Atkinson Hyperlegible";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+                /* Neutral/Darker */
+                color: #4f4f4f;
+              }
+              .iconitos {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                > div {
+                  color: #4f4f4f;
+                }
+              }
+              .discount {
+                font-family: "Atkinson Hyperlegible";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+                color: #212121;
+              }
+            }
+            .approved {
+              display: flex;
+              gap: 7px;
+              padding: 8px 3px;
+
+              img {
+                object-fit: cover;
+              }
+
+              .trespuntitos {
+                position: relative;
+                width: 28px;
+                height: 28px;
+                cursor: pointer;
+
+                .menu {
+                  line-height: 2;
+                  box-shadow: 0px 20px 25px -7px rgba(199, 193, 199, 0.64);
+                  width: 120px;
+                  background-color: white;
+                  position: absolute;
+                  top: -40px;
+                  left: 30px;
+                  border-radius: 10px;
+                  z-index: 13;
+
+                  > div:hover {
+                    background-color: #e6e8f0;
+                  }
+                  > div {
+                    padding: 2px 7px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .card-footer {
+          width: 100%;
+          button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0px;
+            gap: 16px;
+            width: 100%;
+            height: 48px;
+            background-color: $azul;
+            border-radius: 8px;
+            font-family: "Atkinson Hyperlegible";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: $blanco;
+            img {
+              width: 24px;
+              height: 24px;
+              left: 1.11%;
+              right: 1.11%;
+              top: 99.4%;
+              bottom: -94.6%;
+              color: #fcfcfc;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .allActivities2 {
+    margin-left: 37px;
+    .categories {
+      .colCard {
+        gap: 20px;
+        padding-bottom: 15px;
+        .card {
+          .card-img {
+            max-width: 100%;
+          }
+          .card-body {
+            padding: 0 12px;
+            .cardBody_inside {
+              .card-title {
+                font-size: 16px;
+              }
+              .card-text {
+                .places {
+                  font-size: 16px;
+                }
+                .iconitos {
+                  flex-wrap: wrap;
+                  gap: 5px;
+                  justify-content: flex-start;
+                }
+                .discount {
+                  font-size: 16px;
+                }
+              }
+              .approved {
+                gap: 5px;
+                padding: 6px 3px;
+                img {
+                  width: 20px;
+                }
+                .trespuntitos {
+                  width: 22px;
+                  height: 22px;
+                  .menu {
+                    top: -72px;
+                    left: 28px;
+                    > div {
+                      padding: 1px 5px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .card-footer {
+            button {
+              height: 40px;
+              font-size: 16px;
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

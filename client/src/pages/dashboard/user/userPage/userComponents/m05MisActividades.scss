@@ -1,0 +1,19 @@
+.seniorActivities {
+  .activity1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .card {
+    max-width: 300px;
+    min-height: 150px;
+    padding: 2%;
+    text-align: start;
+    .fotoCard {
+      width: 98%;
+    }
+    .cardBody_inside {
+      align-items: start !important;
+      text-align: start !important;
+    }
+  }
+}

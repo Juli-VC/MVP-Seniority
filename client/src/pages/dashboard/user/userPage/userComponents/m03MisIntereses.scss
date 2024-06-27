@@ -1,0 +1,36 @@
+.misIntereses {
+  padding: 2% 10%;
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #212121;
+  .blue {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    color: #07124b;
+  }
+
+  .selectedCat {
+    img {
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .fotoCategory {
+    min-height: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      margin: 0;
+      color: #07124b;
+      font-weight: bold;
+    }
+  }
+}

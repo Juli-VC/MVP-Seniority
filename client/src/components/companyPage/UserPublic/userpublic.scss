@@ -1,0 +1,14 @@
+.public-padre {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 62px;
+  color: #07124b;
+  .card-grande {
+    max-width: 540px;
+    min-width: 400px;
+    min-height: 190px;
+    max-height: 200px;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,24 @@
+$blanco: #fcfcfc;
+
+.filterSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  gap: 10px;
+
+  #dropdown-basic {
+    background-color: $blanco;
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #030823;
+    border: none;
+  }
+  form {
+    height: 52px;
+    background-color: #fcfcfc;
+  }
+}

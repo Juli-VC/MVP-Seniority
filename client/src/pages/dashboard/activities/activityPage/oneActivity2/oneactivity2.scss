@@ -1,0 +1,139 @@
+.act2 {
+  //   padding-left: 50px !important;
+  //   padding-right: 50px !important;
+
+  .infoEmpresa {
+    margin-top: 30px;
+    border: 1px solid #a9a9a9;
+    border-radius: 8px;
+    width: 100%;
+    padding: 25px;
+    font-family: "Atkinson Hyperlegible";
+    /* nombre empresa */
+    .empresa {
+      display: flex;
+      align-items: baseline;
+
+      .nombre-empresa {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+      }
+      /* thumb up */
+      .contador {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        margin-right: 10px;
+        gap: 4px;
+      }
+      .thumb {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+      }
+    }
+
+    /* descripción empresa */
+    .services {
+      text-align: justify;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+    }
+    /* boton saber más sobre la empresa */
+    .boton-mas {
+      border: 1px solid #07124b;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 46px;
+      gap: 8px;
+      background-color: transparent;
+      margin: 30px 0;
+    }
+    .boton-mas:hover {
+      background-color: #e6e8f0;
+    }
+    /* info profesional */
+    .profesional {
+      display: flex;
+      margin-top: 30px;
+      .foto-prof {
+        width: 30%;
+      }
+      .foto-prof > img {
+        width: 80%;
+        object-fit: cover;
+      }
+
+      .info-prof {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+
+        width: 70%;
+      }
+    }
+  }
+  // comentarios
+  .coments {
+    display: flex;
+    flex-direction: column;
+
+    .opinions {
+      display: flex;
+      justify-content: start;
+      margin: 30px 0;
+      font-size: 24px;
+    }
+
+    .all-coments {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .div-coment {
+      display: flex;
+      align-items: end;
+      gap: 10px;
+      width: 100%;
+
+      .div-coment > img {
+        border-radius: 11rem;
+      }
+
+      .info-coment {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 90%;
+        background-color: #fcfcfc;
+        border: 1px solid #fcfcfc;
+        box-shadow: -9px 11px 19px -5px rgba(7, 18, 75, 0.08);
+        border-radius: 16px;
+        padding: 16px;
+        gap: 8px;
+
+        .fecha {
+          display: flex;
+          justify-content: end;
+          width: 100%;
+        }
+
+        .desc-coment > p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .desc {
+    font-size: 15px;
+  }
+}

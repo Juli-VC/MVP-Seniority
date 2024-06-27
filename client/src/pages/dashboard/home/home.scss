@@ -1,0 +1,506 @@
+$blanco: #fcfcfc;
+$azul: #050e3c;
+$negro: #212121;
+
+.bodyIndex {
+  width: 100%;
+  overflow-x: auto;
+  .portada {
+    display: flex;
+    background-color: $azul;
+    /* min-height: 455px; */
+    .blueScreen {
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      color: $blanco;
+
+      background-color: $azul;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 72px 10%;
+      gap: 8px;
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+      }
+      .boton1 {
+        width: 100%;
+        height: 48px;
+        background-color: $azul;
+        border-radius: 8px;
+        border: 1px solid $blanco;
+        color: $blanco;
+        margin-right: 20px;
+      }
+      .boton1:hover {
+        background-color: $blanco;
+        color: $azul;
+      }
+      .boton2 {
+        width: 100%;
+        height: 48px;
+        background-color: #f8a800;
+        border-radius: 8px;
+        border: none;
+      }
+    }
+    .picture {
+      padding: 0;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-top-left-radius: 300px;
+        border-bottom-left-radius: 300px;
+      }
+    }
+  }
+
+  .actis,
+  .empresasContainer {
+    background-color: #f5f5f5;
+    padding: 2% 10% !important;
+
+    .seniority-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #07124b;
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      padding-top: 20px;
+
+      h3 {
+        color: $azul;
+      }
+    }
+    .row4filas {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .cardActivities {
+        min-width: 380px !important;
+        max-width: 380px !important;
+        .cardmapeo {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0px;
+          gap: 24px;
+          // height: 560px;
+          height: 100%;
+          width: 100%;
+          background: $blanco;
+          box-shadow: 0px 25px 50px -12px rgba(7, 18, 75, 0.12);
+          border-radius: 8px;
+
+          .tagNuevo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px;
+            gap: 8px;
+            position: absolute;
+            width: 71px;
+            height: 25px;
+            left: 8px;
+            top: 8.55px;
+            background: #59ffc9;
+            border-radius: 2px;
+          }
+
+          .card-img {
+            position: absolute;
+            height: 157px;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+          }
+
+          .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 16px;
+            isolation: isolate;
+            max-width: 280px;
+
+            .cardBody_inside {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              padding: 0px;
+              gap: 10px;
+
+              .card-title {
+                font-family: "Atkinson Hyperlegible";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 120%;
+                color: $negro;
+                width: 100%;
+              }
+
+              .black {
+                color: $negro;
+                font-weight: bold;
+              }
+
+              .card-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+
+                p {
+                  margin: 0;
+                }
+
+                .places {
+                  font-family: "Atkinson Hyperlegible";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 160%;
+                  color: #4f4f4f;
+                }
+
+                .iconitos {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 20px;
+                  align-items: center;
+                  padding: 0px;
+
+                  > div {
+                    color: #4f4f4f;
+                  }
+                }
+                .hidden {
+                  display: none;
+                }
+
+                .discount {
+                  font-family: "Atkinson Hyperlegible";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 160%;
+                  color: #212121;
+
+                  .tachado {
+                    text-decoration: line-through;
+                  }
+                }
+              }
+            }
+          }
+
+          .card-footer {
+            width: 100%;
+
+            button {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              padding: 0px;
+              gap: 16px;
+              width: 100%;
+              height: 48px;
+              background-color: $azul;
+              border-radius: 8px;
+              font-family: "Atkinson Hyperlegible";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 160%;
+              color: $blanco;
+
+              img {
+                width: 24px;
+                height: 24px;
+                color: $blanco;
+              }
+            }
+            button:hover {
+              background-color: #0a1d75;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // BOTON CONOCER MAS ACTIVIDADES
+
+  .botonconocer {
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    height: 240px;
+    background-color: #f5f5f5;
+
+    .bot {
+      background-color: #f5f5f5;
+      justify-content: center;
+      color: #07124b;
+      min-height: 30%;
+      // width: 20%;
+
+      img {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  // SECCION SENIORITY TE OFRECE
+
+  .seniority-section {
+    padding: 20px;
+    background-color: #eefffa;
+
+    .seniority-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #07124b;
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+    }
+
+    .seniority-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .seniority-icon {
+        text-align: center;
+
+        display: flex;
+        gap: 30px;
+
+        img {
+          width: 46.67px;
+          height: 46.67px;
+          margin-right: 20px;
+        }
+        p {
+          margin-top: 10px;
+          font-family: "Atkinson Hyperlegible";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+
+  // seccion empresas
+  .empresasContainer {
+    .seniority-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #07124b;
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+    }
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0px;
+      gap: 16px;
+      width: 100%;
+      height: 48px;
+      background-color: $azul;
+      border-radius: 8px;
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      color: $blanco;
+
+      img {
+        width: 24px;
+        height: 24px;
+        color: $blanco;
+      }
+    }
+    button:hover {
+      background-color: #0a1d75;
+    }
+  }
+
+  // SECCIÓN HAZTE PARTNER
+
+  .haztePartner {
+    background-color: #eefffa;
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    justify-content: center;
+
+    gap: 30px;
+
+    // width: 100%;
+    /* .divseccion {
+      padding: 0 15% 0 15%;
+      gap: 40px;
+    } */
+
+    .img-pc {
+      /* width: 35%; */
+
+      img {
+        /* max-width: 473px; */
+      }
+    }
+    .primer {
+      .titulo {
+        color: #050e3c;
+        font-weight: 700;
+        font-size: 32px;
+      }
+      .parrafo {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        text-align: justify;
+      }
+
+      .botones {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        gap: 30px;
+        // width: 100%;
+        // margin-left: -220px;
+        // justify-content: flex-start !important;
+      }
+      .boton {
+        color: $blanco;
+        background-color: $azul;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 16px;
+        gap: 8px;
+        width: 200px;
+        height: 48px;
+        border-radius: 8px;
+        margin-left: 0;
+      }
+      .consulta {
+        color: #000000;
+      }
+    }
+  }
+
+  // SECCIÓN OPINIONES
+  .opiniones {
+    margin: 80px 0;
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    color: #050e3c;
+    justify-content: center;
+
+    .tituloopiniones {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      color: #07124b;
+      margin-bottom: 70px;
+    }
+
+    .opi {
+      width: 380px;
+    }
+    .nombres {
+      color: #4f4f4f;
+    }
+  }
+}
+/////////////////////////////////
+/// /////////////////////////////
+///
+@media (max-width: 1200px) {
+  .portadaInt {
+    flex-direction: column-reverse;
+
+    .picture {
+      img {
+        border-radius: 0 !important;
+      }
+    }
+  }
+}
+
+// SECCIÓN HAZTE PARTNER
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .divseccion {
+    flex-direction: column;
+    padding: 0px;
+    .primer {
+      order: 2;
+    }
+    img {
+      order: 1;
+      margin-bottom: 20px;
+    }
+    .titulo {
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .divseccion {
+    flex-direction: column;
+    padding: 0px;
+    img {
+      order: 1;
+      margin-bottom: 20px;
+    }
+    .primer {
+      order: 2;
+    }
+  }
+}

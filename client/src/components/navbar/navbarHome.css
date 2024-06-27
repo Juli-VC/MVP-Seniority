@@ -1,0 +1,30 @@
+.header {
+  height: 72.65px;
+  background-color: #fcfcfc;
+}
+.header .icono {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 96px;
+}
+.header .idioma {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 96px;
+}
+.header .idioma .dropdown,
+.header .idioma button {
+  width: 106px;
+  height: 48px;
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #030823;
+  background-color: #fcfcfc;
+  border: none;
+}/*# sourceMappingURL=navbarHome.css.map */

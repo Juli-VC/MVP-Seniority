@@ -1,0 +1,113 @@
+.adminpadre {
+  display: flex;
+  gap: 15vw;
+  align-items: baseline;
+  padding: 100px 0;
+
+  .adminizq {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .admincajita {
+      display: flex;
+      background-color: #fcfcfc;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px 16px;
+      border-radius: 16px;
+      position: absolute;
+      width: 224px;
+      left: 160px;
+      top: 170px;
+
+      // width: 60%;
+      box-shadow: 0px 4px 4px rgba(9, 24, 100, 0.08);
+
+      .aCajita {
+        cursor: pointer;
+        color: #07124b;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        padding-left: 10px;
+        border-left: transparent 4px solid;
+      }
+    }
+    .selected-link {
+      font-weight: 600;
+      border-left: #07124b solid 4px;
+      text-decoration: none;
+      color: #07124b;
+      cursor: pointer;
+      font-size: 18px;
+      padding-left: 10px;
+    }
+  }
+  .profesionales {
+    height: 325px;
+  }
+  // ipadmini
+}
+@media (max-width: 769px) {
+  .adminpadre {
+    display: block;
+    padding: 50px 0;
+
+    .adminizq {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .admincajita {
+        display: flex;
+
+        align-items: center;
+        width: 60%;
+        left: initial;
+        top: initial;
+        position: static;
+        padding: 16px 0;
+        margin-bottom: 40px;
+
+        .aCajita,
+        .selected-link {
+          font-size: 16px;
+          padding-left: 0;
+          border-left: none;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  .adminpadre {
+    display: block;
+    padding: 30px 0;
+
+    .adminizq {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .admincajita {
+        width: 100%;
+        left: initial;
+        top: initial;
+        position: static;
+        padding: 12px 0;
+
+        .aCajita,
+        .selected-link {
+          font-size: 18px;
+          padding-left: 0;
+          border-left: none;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

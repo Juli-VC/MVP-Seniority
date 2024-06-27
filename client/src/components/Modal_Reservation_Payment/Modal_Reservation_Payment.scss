@@ -1,0 +1,83 @@
+.modal-body {
+  padding: 2% 10%;
+
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #212121;
+  p {
+    margin-bottom: 0;
+  }
+  .bold {
+    font-weight: 700;
+    font-size: 16px;
+    color: #07124b;
+    margin-bottom: 10px;
+  }
+  button {
+    height: 48px;
+    background-color: #07124b;
+    border-radius: 8px;
+    border: none;
+    margin: 15px 0;
+    color: #fcfcfc;
+  }
+  .secondButton {
+    background-color: #fcfcfc;
+    border: 1px solid #07124b;
+    color: #07124b;
+  }
+  .secondButton:hover {
+    background-color: #b3b7cf;
+  }
+  .cancel {
+    color: #07124b;
+    text-decoration-line: underline;
+    text-align: center;
+  }
+  .cancel:hover {
+    cursor: pointer;
+    color: red;
+  }
+}
+.modal-backdrop.show {
+  opacity: 0.2;
+}
+form {
+  .cardname {
+    background-color: #fcfcfc !important;
+    border: 3px solid #07124b !important;
+    border-radius: 8px !important;
+    color: #07124b !important;
+    font-weight: bold !important;
+  }
+  input {
+    border-color: #07124b !important;
+  }
+}
+.StripeElement {
+  height: 41px;
+  background-color: #fcfcfc !important;
+  border: 3px solid #07124b !important;
+  border-radius: 8px;
+
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+
+  padding: 8px;
+}
+/* .botones{
+  button{
+    height: 48px;
+    background-color: #07124b;
+    border-radius: 8px;
+    border: none;
+    margin: 15px 0;
+    color: #fcfcfc;
+  }
+} */

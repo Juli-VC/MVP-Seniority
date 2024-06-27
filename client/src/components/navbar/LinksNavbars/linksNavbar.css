@@ -1,0 +1,51 @@
+.navbar-expand-lg,
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end !important;
+  align-items: center;
+  padding: 8px 48px;
+  gap: 24px;
+  height: 74px;
+  background-color: #fcfcfc;
+  margin-right: 0 !important;
+  color: #030823;
+}
+.navbar-expand-lg .containerLinks,
+.navbar .containerLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end !important;
+  align-items: center;
+  padding: 8px 48px;
+  gap: 24px;
+  height: 74px;
+  background-color: #fcfcfc;
+  margin-right: 0 !important;
+  color: #030823;
+}
+.navbar-expand-lg .nav-link,
+.navbar .nav-link {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #030823;
+}
+.navbar-expand-lg .botoncrearCuenta,
+.navbar .botoncrearCuenta {
+  width: 202px;
+  height: 48px;
+  /* Primary/Normal */
+  background: #091864;
+  border-radius: 8px;
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #ffffff;
+}/*# sourceMappingURL=linksNavbar.css.map */

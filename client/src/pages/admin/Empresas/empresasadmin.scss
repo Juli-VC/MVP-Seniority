@@ -1,0 +1,64 @@
+.empresaadmin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 117px;
+
+  .cardd {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+
+    .imgCard {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 15px;
+    }
+
+    .servicios {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+    }
+    .publicar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .publicar > button {
+      background-color: #07124b;
+      border-radius: 6px;
+      color: #ffffff;
+      border: none;
+    }
+    .publicar > button:hover {
+      background-color: #0a1d75;
+    }
+    .publicar > button:active {
+      background-color: #040b2d;
+    }
+  }
+
+  .bbody {
+    padding: 20px;
+    align-items: flex-start;
+  }
+}
+
+// ipadmini
+@media (max-width: 769px) {
+  .empresaadmin {
+    justify-content: space-around;
+
+    .card {
+      width: calc((100% - 40px) / 2);
+    }
+  }
+}

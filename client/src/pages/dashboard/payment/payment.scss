@@ -1,0 +1,23 @@
+.paymentPage {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18x;
+  line-height: 120%;
+  text-align: start;
+  color: #07124b;
+
+  width: 50% !important;
+  max-width: none;
+  align-items: center;
+
+  .interior {
+    padding: 5%;
+    gap: 10px;
+  }
+  .paybutton {
+    width: 100%;
+    min-height: 50px;
+    font-size: 24px;
+  }
+}

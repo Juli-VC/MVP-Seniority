@@ -1,0 +1,22 @@
+$blanco: #fcfcfc;
+
+.blanquito {
+  background-color: #e6e8f0;
+  padding: 5% 20%;
+
+  .extForm {
+    background-color: $blanco;
+
+    .forumularioEmpresa {
+      padding-right: 40%;
+      padding: 30px;
+
+      .btn-primary {
+        height: 48px;
+        background-color: #091864;
+        border-radius: 8px;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+$azul: #07124b;
+$blanco: #fcfcfc;
+$negro: #212121;
+.navbarHome {
+  box-shadow: 0px 8px rgba(9, 24, 100, 0.08);
+  background-color: $blanco;
+  .header {
+    min-height: 72.65px;
+
+    background-color: $blanco;
+
+    .icono {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 8px 96px;
+    }
+    .idioma {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 8px 96px;
+      .dropdown,
+      button {
+        width: 106px;
+        min-height: 48px;
+        font-family: "Atkinson Hyperlegible";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        text-align: center;
+        color: #030823;
+        background-color: $blanco;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+$blanco: #fcfcfc;
+
+.registerpage {
+  background-color: RGB(230, 232, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 20%;
+
+  .registerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+    background-color: $blanco;
+    border-radius: 16px;
+    justify-content: center;
+    text-align: center;
+    .form1 {
+      padding: 15px;
+      .entra {
+        display: flex;
+        align-items: end;
+        justify-content: end !important;
+        width: 100%;
+        a:hover {
+          color: blue;
+          cursor: pointer;
+        }
+      }
+      .form1int {
+        padding: 20px 100px 50px 100px;
+        text-align: start;
+        form {
+          display: flex;
+          flex-direction: column;
+
+          padding: 0 20%;
+          gap: 5px;
+
+          input,
+          label,
+          ul {
+            width: 100%;
+          }
+          input {
+            height: 52px;
+            border: 2px solid #091864;
+            border-radius: 8px;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px 16px;
+          }
+          #invalidCheck {
+            width: 15px;
+            height: 15px;
+          }
+          #invalidCheckbig {
+            width: 25px;
+            height: 25px;
+          }
+          .botonregister {
+            height: 48px;
+            background: #091864;
+            border-radius: 8px;
+            color: $blanco;
+            border: none;
+          }
+          .botonregister:hover {
+            background-color: #0a1d75;
+          }
+        }
+      }
+    }
+    .form2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px 100px;
+
+      .finalizar {
+        padding: 0px;
+        gap: 8px;
+        width: 250px;
+        height: 48px;
+        background: #091864;
+        color: white;
+        border-radius: 8px;
+      }
+
+      h1 {
+        font-family: "Atkinson Hyperlegible";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #212121;
+      }
+      p {
+        font-family: "Atkinson Hyperlegible";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        color: #212121;
+      }
+      .buttonNext {
+        width: 380px;
+        height: 48px;
+        background: #091864;
+        border-radius: 8px;
+        color: $blanco;
+        border: none;
+      }
+      .buttonNext:hover {
+        background-color: #0a1d75;
+      }
+    }
+    .form5 {
+      padding: 2%;
+
+      p {
+        font-size: 24px;
+      }
+
+      .defvideo {
+        width: 500px;
+        height: 250px;
+      }
+
+      .finalizar {
+        padding: 0px;
+        gap: 8px;
+        width: 250px;
+        height: 48px;
+        background: #091864;
+        color: white;
+        border-radius: 8px;
+      }
+
+      .atras {
+        padding: 0px;
+        gap: 8px;
+        width: 150px;
+        height: 48px;
+        color: black;
+        border-radius: 8px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+    }
+    .form4 {
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      padding: 5% 1%;
+      .datospersonales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          width: 60%;
+          gap: 5px;
+
+          input {
+            width: 100%;
+          }
+          label {
+            color: #091864;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    p,
+    h3,
+    label {
+      margin: 0;
+    }
+    .errorMsg {
+      color: red;
+      font-weight: bold;
+    }
+
+    .fotoCategory:hover {
+      border: 1px solid darkblue;
+    }
+    #upload-photo {
+      opacity: 0;
+      position: absolute;
+      z-index: -1;
+    }
+    .addfoto {
+      width: 110px;
+      height: 110px;
+    }
+    .addfoto:hover {
+      img {
+        width: 98px;
+        height: 98px;
+      }
+    }
+  }
+}

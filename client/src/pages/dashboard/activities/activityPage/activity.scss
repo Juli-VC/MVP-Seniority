@@ -1,0 +1,55 @@
+.actContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 8vh 8vw;
+  font-family: "Atkinson Hyperlegible";
+  gap: 80px;
+  .actrow {
+    display: flex;
+  }
+
+  .migas {
+    display: flex;
+    margin-left: 4vw;
+    padding-top: 20px;
+  }
+  .migas > nav > .breadcrumb > .descrip {
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .actrow {
+    display: flex;
+    justify-content: space-around;
+  }
+  .actizq {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .actdch {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 390px) {
+  .actContainer {
+    .actrow {
+      flex-direction: column;
+    }
+    .migas > nav {
+      font-size: 15px;
+    }
+    .actizq {
+      width: 100%;
+    }
+    .actdch {
+      width: 100%;
+    }
+  }
+}

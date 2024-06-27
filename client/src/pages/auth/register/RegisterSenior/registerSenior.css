@@ -1,0 +1,53 @@
+.registerpage {
+  background-color: RGB(230, 232, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid red;
+}
+
+.entra {
+  display: flex;
+  align-items: end;
+  justify-content: end !important;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.registerdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 66%;
+  background: #fcfcfc;
+  border-radius: 16px;
+  border: 1px solid blue;
+  justify-content: center;
+  text-align: center;
+}
+.registerdiv p,
+.registerdiv h3,
+.registerdiv label {
+  margin: 0;
+}
+.registerdiv .botonregister {
+  background-color: RGB(9, 24, 100);
+  color: white;
+  display: flex;
+}
+.registerdiv .fotoCategory:hover {
+  border: 1px solid red;
+}
+.registerdiv #upload-photo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.registerdiv .addfoto {
+  width: 110px;
+  height: 110px;
+}
+.registerdiv .addfoto:hover img {
+  width: 98px;
+  height: 98px;
+}/*# sourceMappingURL=registerSenior.css.map */

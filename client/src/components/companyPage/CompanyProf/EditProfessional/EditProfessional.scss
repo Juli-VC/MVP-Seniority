@@ -1,0 +1,197 @@
+$azul: #07124b;
+$blanco: #fcfcfc;
+$negro: #212121;
+
+
+
+  .prof{
+    margin-top: 2%;
+  }
+
+  .botonregister{
+    color: $blanco;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 8px;
+    width: 256px;
+    height: 48px;
+    background: #07124B;
+    border-radius: 8px;
+  }
+
+  .crearPro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    width: 280px;
+    height: 68px;
+    background: $azul;
+    border-radius: 16px;
+  }
+
+  .tituloazul{
+      color: $azul;
+      font-size: 36px;
+  }
+  .nombreazul{
+    color: $azul;
+    font-size: 28px;
+  }
+  .textooscuro{
+    font-size: 20px;
+    color: #212121;
+
+  }
+
+  .paddinabajo{
+    padding-left: 1;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 24px;
+    max-width: 500px;
+    background: $blanco;
+    box-shadow: 4px 40px 50px 5px rgba(7, 18, 75, 0.12);
+    border-radius: 20px;
+    padding-left: 2%;
+    padding-top: 1%;
+
+  .card-img {
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    isolation: isolate;
+    max-width: 280px;
+
+    .cardBody_inside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      gap: 10px;
+
+    .card-title {
+        font-family: "Atkinson Hyperlegible";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        color: $negro;
+    }
+      
+    
+
+      .card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+
+        p {
+          margin: 0;
+        }
+
+        .places {
+          font-family: "Atkinson Hyperlegible";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+          color: #4f4f4f;
+        }
+        .iconitos {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px;
+          > div {
+            color: #4f4f4f;
+          }
+        }
+
+      }
+
+    
+
+
+   
+
+        
+        
+      }
+    } 
+}
+
+
+
+
+.form{
+  margin-top: 2%;
+
+  width: 40vw;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 2%;
+
+  .titulocreate{
+    padding-bottom: 2%;
+   
+    p{
+      font-size: 20px;
+    }
+
+    .inputs{
+      width: 20vw;
+
+    }
+
+    .bordeinput{
+      border: 3px solid #07124B;
+      border-radius: 10px;
+
+    }
+
+    .textinput{
+      width: 20vw;
+      min-height: 100px;
+      max-height: 250px;
+
+    }
+
+  }
+
+  .botonregister{
+    padding: 8px 24px;
+    gap: 8px;
+    width: 256px;
+    height: 48px;
+    background: #07124B;
+    border-radius: 8px;
+
+
+
+  }
+
+}
+    
+

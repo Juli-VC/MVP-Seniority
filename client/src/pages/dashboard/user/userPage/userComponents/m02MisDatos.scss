@@ -1,0 +1,39 @@
+.misDatos {
+  padding: 1% 15%;
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #212121;
+
+  .datosInt {
+    border: 3px dashed #07124b;
+    padding: 5% 10%;
+    box-shadow: #07124b 0px 5px 15px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+  }
+  .blue {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #07124b;
+  }
+  p {
+    margin: 0;
+  }
+  .editbtn:hover {
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .seniorIMG {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
